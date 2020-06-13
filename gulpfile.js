@@ -38,7 +38,6 @@ function Images(){
         .pipe(gulp.dest('build/img'))
 }
 
-
 function Svg(){
     return gulp.src(['src/svg/*'])
         .pipe(svgMin())
