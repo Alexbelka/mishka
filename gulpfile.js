@@ -46,7 +46,7 @@ function Svg(){
 
 
 function Server(){
-    server.init({server:"./",browser:'chrome'});
+    server.init({server:"./",browser:'firefox'});
     gulp.watch("index.html").on('change', server.reload);
     gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js,Images,Svg));
 }
