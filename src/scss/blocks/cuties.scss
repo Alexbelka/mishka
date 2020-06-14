@@ -2,9 +2,19 @@
   width:260px;
   height:355px;
   margin:auto;
-  background:url('../../build/img/hero-mobile.png') center -20px ;
+  background:url('../../../build/img/hero-mobile.png') center -20px ;
   position:relative;
   padding-top: 76px;
+}
+
+.cuties__newComer,
+.cuties__sales,
+.cuties__delivery{
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  position:absolute;
+  display: none;
 }
 
 .cuties__title{
@@ -30,10 +40,13 @@
 
 .cuties__assortment-item--interior{
   background-color: rgb(99,209,187);
+  display: flex;
 }
+
 
 .cuties__assortment-item--toys{
   background-color:rgb(86,195,178);
+  display: flex;
 }
 
 .cuties__assortment-item a{
@@ -42,13 +55,27 @@
   color:rgb(255,255,255);
 }
 
+.cuties__assortment-lamp{
+  margin-left: 110px;
+}
+
+.cuties__assortment-toy{
+  margin-left: 120px;
+}
+
 @media(min-width: 768px){
   .cuties{
     width:768px;
     min-height: 746px;
     margin:0;
     padding: 160px 50px 0;
-    background: url('../../build/img/hero-desktop.png') no-repeat center;
+    background: url('../../../build/img/hero-desktop.png') no-repeat center;
+  }
+
+  .cuties__delivery{
+    display: block;
+    top:27px;
+    right:50px;
   }
 
   .cuties__assortment{
@@ -69,6 +96,22 @@
     width:1250px;
   }
 
+  .cuties__delivery{
+  right:100px;
+  }
+
+  .cuties__newComer{
+    display: block;
+    top:27px;
+    left: 100px;
+  }
+
+  .cuties__sales{
+    display: block;
+    top:27px;
+    left:244px;
+  }
+
   .cuties__assortment{
     left:100px;
   }
@@ -77,6 +120,14 @@
     width:525px;
     min-height: 120px;
     padding:35px 377px 35px 35px;
+  }
+
+  .cuties__assortment-lamp{
+    margin-left: 300px;
+  }
+
+  .cuties__assortment-toy{
+    margin-left: 300px;
   }
 
 }
