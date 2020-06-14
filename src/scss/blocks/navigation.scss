@@ -21,6 +21,24 @@
   color:rgb(0,0,0);
 }
 
+@media(min-width:768px) and (max-width:1249px){
+
+    .navigation__menu-item--knitting {
+      position: absolute;
+      bottom: -94px;
+      left: 160px;
+      z-index: 10;
+    }
+
+    .navigation__menu-item--catalog {
+      position: absolute;
+      bottom: -94px;
+      z-index: 10;
+    }
+
+}
+
+
 @media(min-width: 768px) {
   .navigation {
     min-height: 88px;
@@ -43,17 +61,36 @@
     display: none;
   }
 
-  .navigation__menu-item--knitting{
-    position: absolute;
-    bottom:-94px;
-    left:160px;
-    z-index: 10;
+
+  .navigation__menu-item--knitting a{
+    font-size:15px;
+    line-height: 24px;
   }
 
+  .navigation__menu-item--catalog a{
+    font-size:15px;
+    line-height: 24px;
+  }
+
+  .navigation__menu-item--basket a{
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+}
+
+@media(min-width:1250px){
+
   .navigation__menu-item--catalog{
-    position:absolute;
-    bottom:-94px;
-    z-index: 10;
+  order:-1;
+  }
+
+  .navigation__menu-item--knitting{
+  order:-2;
+  }
+
+  .navigation__menu-item--basket{
+    margin-left: 220px;
   }
 
 }

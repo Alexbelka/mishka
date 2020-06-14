@@ -25,7 +25,6 @@
 .cuties__assortment-item{
   min-height: inherit;
   width:320px;
-  box-shadow: 0 0 1px 1px black;
   padding:30px 185px 30px 29px;
 }
 
@@ -49,14 +48,35 @@
     min-height: 746px;
     margin:0;
     padding: 160px 50px 0;
-    background: url('../../build/img/hero-desktop.png') no-repeat;
-    box-shadow: 0 0 2px 2px red;
+    background: url('../../build/img/hero-desktop.png') no-repeat center;
   }
-  
+
   .cuties__assortment{
     left:60px;
     bottom: 0;
     flex-direction: row;
+  }
+
+  .cuties__assortment-item{
+    padding:35px 187px 35px 35px;
+  }
+
+}
+
+
+@media(min-width:1250px){
+  .cuties{
+    width:1250px;
+  }
+
+  .cuties__assortment{
+    left:100px;
+  }
+
+  .cuties__assortment-item{
+    width:525px;
+    min-height: 120px;
+    padding:35px 377px 35px 35px;
   }
 
 }

@@ -11,7 +11,11 @@
 @media(min-width:768px){
   .header{
     width:768px;
-    box-shadow:0 0 2px 2px orange;
   }
+}
 
+@media(min-width:1250px){
+  .header{
+    width:1250px;
+  }
 }
