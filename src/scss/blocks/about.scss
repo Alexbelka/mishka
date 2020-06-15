@@ -1,0 +1,115 @@
+.about{
+  width:260px;
+  margin:auto;
+}
+
+.about__title{
+  font-size:25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about__ecoMaterials,
+.about__handMade,
+.about__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.about__wrapper{
+  min-height: 710px;
+  display: flex;
+ flex-direction: column;
+  justify-content: space-around;
+}
+
+.about__ecoMaterials,
+.about__handMade{
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about__ecoMaterials-item,
+.about__handMade-item{
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  position:relative;
+  line-height: 20px;
+  font-weight: 700;
+  min-height:95px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about__handMade-item:before,
+.about__ecoMaterials-item:before{
+  content:"";
+  position:absolute;
+  top:0;
+  width:32px;
+  height: 37px;
+}
+
+.about__ecoMaterials-item:nth-child(1):before{
+  background: url('../../../build/svg/icon-1.svg') center no-repeat;
+}
+
+.about__ecoMaterials-item:nth-child(2):before{
+  background: url('../../../build/svg/icon-3.svg') center no-repeat;
+}
+
+.about__ecoMaterials-item:nth-child(3):before{
+  background: url('../../../build/svg/icon-5.svg') center no-repeat;
+}
+
+.about__handMade-item:nth-child(1):before{
+  background: url('../../../build/svg/icon-2.svg') center no-repeat;
+}
+
+.about__handMade-item:nth-child(2):before{
+  background: url('../../../build/svg/icon-4.svg') center no-repeat;
+}
+
+.about__handMade-item:nth-child(3):before{
+  background: url('../../../build/svg/icon-6.svg') center no-repeat;
+}
+
+@media(min-width:768px){
+
+.about{
+  width:768px;
+  padding-left:50px;
+  padding-right: 50px;
+}
+
+.about__wrapper{
+  min-height: 410px;
+  flex-direction: row;
+}
+
+.about__title{
+  font-size: 43px;
+  line-height: 50px;
+}
+  .about__handMade,
+ .about__ecoMaterials{
+  height: 410px;
+ }
+
+  .about__handMade-item,
+.about__ecoMaterials-item{
+  font-size:20px;
+  line-height: 22px;
+}
+
+}
+
+@media(min-width: 1250px){
+  .about{
+    width:1250px;
+    padding-left: 275px;
+    padding-right:275px;
+  }
+}
