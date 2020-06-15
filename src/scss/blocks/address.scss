@@ -1,0 +1,54 @@
+.address{
+  width:260px;
+  min-height: 210px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 30px;
+}
+
+.address__item{
+  display: flex;
+}
+
+
+.address__item p{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.address__item-Eaddress{
+  margin-left: 45px;
+}
+
+.address__item-city{
+  margin-left:40px;
+}
+
+@media(min-width:768px){
+  .address{
+    width: 668px;
+    flex-direction: row;
+
+  }
+  .address__item{
+    width: 334px;
+
+  }
+
+  .br{
+    display: none;
+  }
+
+}
+
+
+@media(min-width:1250px){
+  .address{
+    width: 525px;
+    flex-direction: column;
+  }
+}

@@ -4,7 +4,7 @@
   margin:auto;
   background:url('../../../build/img/hero-mobile.png') center -20px ;
   position:relative;
-  padding-top: 76px;
+  padding-top: 58px;
 }
 
 .cuties__newComer,
@@ -68,8 +68,13 @@
     width:768px;
     min-height: 746px;
     margin:0;
-    padding: 160px 50px 0;
+    padding: 125px 50px 0;
     background: url('../../../build/img/hero-desktop.png') no-repeat center;
+  }
+
+  .cuties__title{
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .cuties__delivery{

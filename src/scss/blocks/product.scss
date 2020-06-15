@@ -30,6 +30,11 @@
   line-height: 20px;
 }
 
+.product__week-item{
+  text-align: right;
+  padding-left: 5px;
+}
+
 .product__week br{
   display: none;
 }
@@ -85,7 +90,7 @@
   line-height:20px;
   font-weight: bold;
   color:rgb(68,68,68);
-  margin-top:25px;
+  margin-top:7px;
 }
 
 .value-name{
@@ -148,8 +153,9 @@
   }
 
   .product__price{
+    font-size: 20px;
     text-align: left;
-    margin-left: 70px;
+    margin-left: 75px;
     margin-top: 70px;
   }
 
@@ -165,6 +171,10 @@
     padding-left:100px;
     padding-right: 100px;
 }
+
+  .product__image{
+    right: 100px;
+  }
 
 .product__wrapper{
   width:700px;

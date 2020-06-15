@@ -1,0 +1,17 @@
+.frame{
+  min-height: 457px;
+  width: 320px;
+}
+
+@media(min-width: 767px){
+  .frame{
+    width: 768px;
+    margin:0;
+  }
+}
+
+@media(min-width: 1250px){
+  .frame{
+    width:525px;
+  }
+}

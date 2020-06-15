@@ -1,0 +1,61 @@
+.contacts{
+  width:320px;
+  padding-top: 65px;
+}
+
+.contacts__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__tittle{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-left: 30px;
+  position: relative;
+}
+
+.contacts__tittle:after{
+  content: "";
+  position: absolute;
+  width:47px;
+  height: 81px;
+  background: url('../../../build/svg/flag.svg');
+  left: -60px;
+  top:-20px;
+}
+
+@media(min-width: 768px){
+  .contacts{
+    width:768px;
+  }
+  .contacts__tittle{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media(min-width: 1250px){
+  .contacts{
+    width: 1250px;
+  }
+  .contacts__wrapper{
+    width:1050px;
+    flex-direction: row;
+
+    margin:auto;
+  }
+
+  .contacts__tittle{
+    margin:0;
+  }
+
+  .contacts__wrapper-inside{
+    padding-left:175px;
+    padding-top: 81px;
+    width: 525px;
+  }
+}

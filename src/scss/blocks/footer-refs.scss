@@ -1,0 +1,17 @@
+.footer-refs{
+  width: 260px;
+  min-height: 80px;
+  padding: 0 62px 0 57px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 1px 1px black;
+}
+
+
+.footer-refs__item{
+  height: 22px;
+  width: 22px;
+  border:1px solid black;
+}
