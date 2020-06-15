@@ -4,7 +4,14 @@
   padding-left:30px;
   padding-right:30px;
   font-family: "Open Sans", sans-serif;
-  box-shadow: 0 0 1px 1px red;
+
+}
+
+.reviews__wrapper{
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .reviews__title{
@@ -25,6 +32,8 @@
 
 .reviews__address{
   color:rgb(68,68,68);
+  display: block;
+  margin-bottom: 15px;
 }
 
 .reviews__switcher{
@@ -57,7 +66,7 @@
   padding-left: 60px;
   padding-right: 60px;
   padding-top:86px;
-  background: url('../../../build/img/review.png') no-repeat 60px;
+  background: url('../../../build/img/review.png') no-repeat;
 }
 
 .reviews__title{
@@ -76,9 +85,6 @@
   min-height:335px;
   right:60px;
   top:86px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .reviews__write{
@@ -94,10 +100,6 @@
     display: block;
     margin-top: 60px;
   }
-
- .reviews__address{
-   display: block;
- }
 
 }
 
