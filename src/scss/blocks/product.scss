@@ -1,0 +1,210 @@
+.product{
+  width:260px;
+  margin:auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  border-top:1px solid transparent;
+  padding-top: 35px;
+}
+
+.product__wrapper{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  z-index: 1;
+}
+
+.product__name{
+  font-size:25px;
+  line-height: 30px;
+  font-weight:700;
+  //margin-top: 30px;
+}
+
+.product__week{
+  text-transform: uppercase;
+  color:rgb(99,209,187);
+  font-size:17px;
+  line-height: 20px;
+}
+
+.product__week br{
+  display: none;
+}
+
+.product__parameters li{
+  display: flex;
+  align-items: center;
+  min-height: 41px;
+  border-bottom:1px solid rgb(236,236,236);
+}
+
+.product__parameters{
+  margin-top: 35px;
+}
+
+.key{
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.product__description{
+  font-size: 15px;
+  font-weight:400;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.product__image{
+  width:260px;
+  min-height: 315px;
+  margin:25px auto 0;
+  background:url('../../../build/img/triple.png');
+}
+
+.product__price{
+  font-size:17px;
+  line-height: 24px;
+  font-weight: bold;
+  color:rgb(68,68,68);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.product__request{
+  display: block;
+  background:transparent;
+  width:260px;
+  min-height: 52px;
+  border:2px solid rgb(68,68,68);
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height:20px;
+  font-weight: bold;
+  color:rgb(68,68,68);
+  margin-top:25px;
+}
+
+.value-name{
+  margin-left: 55px;
+}
+
+.value-length{
+  margin-left: 30px;
+}
+
+.value-height{
+  margin-left: 35px;
+}
+
+@media(min-width: 768px){
+  .product{
+    width:668px;
+    position: relative;
+    padding-top:55px;
+  }
+
+  .product__image{
+    width:333px;
+    min-height: 404px;
+    position: absolute;
+    right:0;
+    top:150px;
+    background: url('../../../build/img/triple-tablet.png');
+  }
+
+  .product__description{
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 60px;
+  }
+
+  .product__wrapper{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+
+  .product__name{
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .product__week{
+    line-height: 17px;
+  }
+
+  .product__week br{
+    display: block;
+  }
+
+  .product__parameters{
+  width: 334px;
+    margin-top: 50px;
+  }
+
+  .product__price{
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 70px;
+  }
+
+  .product__request{
+    width:292px;
+  }
+
+}
+
+
+@media(min-width:1250px){
+
+  .product{
+  width:1050px;
+}
+
+.product__wrapper{
+  width:700px;
+  padding-left: 40px;
+}
+
+  .product__name{
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+ .product__week{
+   order:-1;
+ }
+
+  .product__description{
+    margin-top: 70px;
+  }
+
+  .product__parameters{
+    margin-top: 65px;
+  }
+
+  .product__parameters,
+  .product__request,
+  .product__description{
+    margin-left: 175px;
+  }
+
+  .product__price{
+    margin-left:250px;
+    margin-top: 130px;
+  }
+
+  .product__image{
+    width:525px;
+    min-height: 636px;
+    background:url('../../../build/img/triple-desktop.png');
+    top:0;
+
+  }
+
+}

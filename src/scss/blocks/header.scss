@@ -1,12 +1,12 @@
 .header{
   width: 320px;
-  display: flex;
-  flex-direction: column;
   background-color:rgb(255,255,255);
   margin:auto;
   font-family:"Open Sans",sans-serif;
   font-weight: bold;
 }
+
+
 
 @media(min-width:768px){
   .header{

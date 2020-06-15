@@ -1,0 +1,19 @@
+.main-page{
+  width:320px;
+  min-height: 200px;
+  margin: 140px auto 0;
+  background-color: rgb(255,255,255);
+}
+
+@media(min-width: 768px){
+  .main-page {
+    width:768px;
+    margin: 0 auto 0;
+  }
+}
+
+@media(min-width: 1250px){
+  .main-page{
+    width:1250px;
+  }
+}
