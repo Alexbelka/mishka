@@ -74,7 +74,6 @@
 }
 
 @media(min-width:767px){
-
 .reviews{
   width:767px;
   position:relative;
@@ -123,11 +122,14 @@
   .reviews{
     width:1250px;
     padding-right: 100px;
-    padding-left: 100px;
+    padding-left: 175px;
     background-position: 100px;
   }
   .reviews__wrapper{
     right:100px;
     min-height: 300px;
+  }
+  .reviews__text{
+    padding-right: 90px;
   }
 }

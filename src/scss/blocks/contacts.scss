@@ -22,8 +22,7 @@
   width:47px;
   height: 81px;
   background: url('../../../build/svg/flag.svg');
-  left: -60px;
-  top:-20px;
+  display:none;
 }
 
 @media(min-width: 768px){
@@ -36,6 +35,13 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  .contacts__tittle:after{
+    display: block;
+    top:-20px;
+    right:60px;
+  }
+
 }
 
 @media(min-width: 1250px){
@@ -45,12 +51,15 @@
   .contacts__wrapper{
     width:1050px;
     flex-direction: row;
-
     margin:auto;
   }
 
   .contacts__tittle{
     margin:0;
+  }
+
+  .contacts__tittle:after{
+    left:-80px;
   }
 
   .contacts__wrapper-inside{
