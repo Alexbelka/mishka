@@ -1,0 +1,54 @@
+.catalog-product{
+  background-color: rgb(255,255,255);
+  padding:75px 30px 110px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.catalog-product__title{
+  font-size: 27px;
+  line-height: 30px;
+  font-weight:700;
+  text-align: center;
+}
+
+.catalog-product__item{
+  display: none;
+  position:absolute;
+}
+
+@media(min-width:768px){
+  .catalog-product{
+   position:relative;
+  }
+
+  .catalog-product__title{
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .catalog-product__delivery{
+    display: block;
+    top:30px;
+    right:50px;
+  }
+
+}
+
+@media(min-width: 1250px){
+
+  .catalog-product__delivery{
+    right: 100px;
+  }
+
+  .catalog-product__newComer{
+    display: block;
+    top:30px;
+    left:100px;
+  }
+
+  .catalog-product__sale{
+    display: block;
+    top:30px;
+    left:330px;
+  }
+}

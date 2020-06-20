@@ -44,11 +44,13 @@ function Svg(){
         .pipe(gulp.dest('build/svg'))
 }
 
-
 function Server(){
     server.init({server:"./",browser:'firefox'});
+    gulp.watch('form.html').on('change',server.reload)
+    gulp.watch('catalog.html').on('change',server.reload);
     gulp.watch("index.html").on('change', server.reload);
     gulp.watch('src/scss/**/*.scss',gulp.series(Sass,Js,Images,Svg));
 }
+
 
 exports.start = series(Sass,Js,Images,Svg,Server);

@@ -1,0 +1,143 @@
+.catalog-cart{
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  border:2px solid rgb(237,237,237);
+}
+
+.catalog-cart__item{
+  min-height: 195px;
+}
+
+.catalog-cart__item:nth-child(2),
+.catalog-cart__item:nth-child(4),
+.catalog-cart__item:nth-child(6){
+  padding: 31px 35px 30px 28px;
+}
+
+.catalog-cart__rabbit{
+  width: 260px;
+  background: url('../../../build/img/photo-1-mobile.png');
+}
+
+.catalog-cart__basket{
+  width: 260px;
+  background: url('../../../build/img/photo-2-mobile.png');
+}
+
+.catalog-cart__toys{
+  width: 260px;
+  background: url('../../../build/img/photo-3-mobile.png');
+}
+
+.catalog-cart__list{
+  padding-bottom: 10px;
+}
+
+.catalog-cart__list dt{
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.catalog-cart__list dd{
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog-cart__price{
+  font-size:15px;
+  line-height: 24px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-top: 30px;
+  border-top:2px solid rgb(237,237,237);
+  position:relative;
+}
+
+.catalog-cart__price:after{
+  content:"";
+  position: absolute;
+  width:20px;
+  height: 20px;
+  background:url('../../../build/svg/cart.svg');
+  right:0;
+}
+
+@media(min-width: 768px){
+  .catalog-cart{
+    width: 668px;
+    min-height: 334px;
+    flex-direction: row;
+  }
+
+  .catalog-cart__item{
+    min-height: 334px;
+  }
+
+  .catalog-cart__rabbit{
+    background:url('../../../build/img/photo-1-tablet.png') center;
+  }
+
+  .catalog-cart__basket{
+    background:url('../../../build/img/photo-2-tablet.png') center;
+  }
+
+  .catalog-cart__toys{
+    background:url('../../../build/img/photo-3-tablet.png') center;
+  }
+
+  .catalog-cart__list{
+    padding-bottom:160px;
+  }
+
+  .catalog-cart__item:nth-child(2),
+  .catalog-cart__item:nth-child(4),
+  .catalog-cart__item:nth-child(6){
+    padding: 31px 35px 30px 28px;
+  }
+
+}
+
+@media(min-width: 1250px){
+  .catalog-cart{
+    width:316px;
+    min-height: 659px;
+    flex-direction: column;
+  }
+  .catalog-cart__item:nth-child(1),
+  .catalog-cart__item:nth-child(3),
+  .catalog-cart__item:nth-child(5){
+    width:inherit;
+    height:462px;
+  }
+
+  .catalog-cart__item:nth-child(2),
+  .catalog-cart__item:nth-child(4),
+  .catalog-cart__item:nth-child(6){
+    width:316px;
+    min-height:20px;
+  }
+
+
+  .catalog-cart__rabbit{
+    background: url('../../../build/img/photo-1-desktop.png') center;
+    background-size:100%;
+  }
+
+  .catalog-cart__basket{
+    background:url('../../../build/img/photo-2-desktop.png') center;
+    background-size: 100%;
+  }
+
+  .catalog-cart__toys{
+    background: url('../../../build/img/photo-3-desktop.png') center;
+    background-size: 100%;
+  }
+
+  .catalog-cart__list{
+    padding:0;
+  }
+
+}
