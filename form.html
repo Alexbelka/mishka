@@ -43,7 +43,93 @@
         <p class="catalog-product__item catalog-product__newComer">Новые поступления</p>
         <p class="catalog-product__item catalog-product__sale">Распродажа</p>
     </section>
-
+    <section class="form">
+        <p class="form__text">
+            Мы будем рады воплотить в жизнь
+            ваши пожелания! Заполните простую
+            форму заказа и мы свяжемся с вами,
+            чтобы уточнить детали.
+        </p>
+        <form action="" class="form-form">
+        <h3 class="form-form__title">
+            тип
+        </h3>
+            <fieldset class="form-form__type type">
+                <label>
+                    <input type="radio">
+                Аксессуар<br> для интерьера
+                </label>
+                <label>
+                    <input type="radio">
+                    Детская игрушка
+                </label>
+          </fieldset>
+            <h3 class="form-form__title">
+                Цвет
+            </h3>
+            <fieldset class="form-form__type color">
+                <label>
+                    <input type="checkbox">
+                    Белый
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Серый
+                </label>
+                <label>
+                    <input type="checkbox">
+                    "Тиффани"
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Черный
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Розовый
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Оранжевый
+                </label>
+            </fieldset>
+            <h3 class="form-form__title">
+                фио
+            </h3>
+            <fieldset class="form-form__type name">
+                <div class="form-form__container">
+                <label for="name">Имя:<br></label>
+                    <input id="name" type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-form__container">
+                <label for="surname">Фамилия:<br></label>
+                    <input id="surname" type="text" placeholder="Укажите вашу фамилию">
+                </div>
+                <div class="form-form__container">
+                <label for="MiddleName">Отчество:<br></label>
+                <input id="MiddleName" type="text" placeholder="Отчество, если желаете">
+                </div>
+            </fieldset>
+            <fieldset class="form-form__type form-form__type-phone">
+                <label for="phone" class="form-form__title">Тел</label>
+                <input id="phone" type="text" placeholder="+ 7 XXX XX XX*">
+            </fieldset>
+            <fieldset class="form-form__type form-form__type-mail">
+                <label for="mail" class="form-form__title">E-MAIL</label>
+                <input id="mail" type="text" placeholder="Ваш Email*">
+            </fieldset>
+            <fieldset class="form-form__type">
+                <label for="extra" class="form-form__title">Доп</label>
+                <textarea id="extra" class="form-form__type-extra"
+                     placeholder="Опишите все ваши пожелания к заказу"  name=""></textarea>
+            </fieldset>
+            <p class="form-form__required">
+                Поля обязательные для заполнения
+            </p>
+            <input type="submit" value="Отправить заказ" class="form__submit">
+        </form>
+    </section>
 </main>
+
 </body>
 </html>

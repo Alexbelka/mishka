@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
+
 body{
   min-width:320px;
   background-color: rgb(40,40,40);
+}
+
+fieldset{
+  border:none;
 }
 
 img{
@@ -25,3 +30,5 @@ a{
 button{
   background: transparent;
 }
+
+

@@ -1,0 +1,102 @@
+.form{
+  width:320px;
+  background-color:rgb(255,255,255);
+  font-family: "Open Sans", sans-serif;
+  padding: 0 30px 0;
+}
+
+.form__text{
+  font-size:13px;
+  line-height: 24px;
+ margin-bottom: 30px;
+}
+
+.form-form__title{
+  font-size: 17px;
+  line-height: 17px;
+  color:rgb(98,209,186);
+  text-transform: uppercase;
+  position:relative;
+  font-weight: bold;
+  margin-bottom:30px;
+}
+
+.form-form__title:after{
+  content:" ";
+  position:absolute;
+  width:198px;
+  height: 1px;
+  background-color: rgb(98,209,186);
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.form-form__type{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:0;
+  margin-bottom:30px;
+}
+
+.form-form__type label{
+  font-size:17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+
+.form-form__required{
+  font-size:14px;
+  line-height: 16px;
+}
+
+.form-form__container{
+  min-height: 90px;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  padding:10px 0 10px;
+  border:none;
+  border-bottom:2px solid black;
+}
+
+.type{
+  min-height:100px;
+}
+
+.color{
+  min-height: 350px;
+}
+
+.name{
+  min-height: 270px;
+}
+
+input[type='text']{
+  border:none;
+}
+
+.form-form__type-mail,
+.form-form__type-phone{
+  min-height: 85px;
+  border-bottom:2px solid black;
+  padding:20px 0 20px;
+}
+
+.form-form__type-extra{
+  min-height: 142px;
+  border:2px solid black;
+}
+
+.form__submit{
+  min-height: 52px;
+  width:260px;
+  text-transform: uppercase;
+  font-size:17px;
+  font-weight:bold;
+  line-height: 17px;
+  background:transparent;
+  border:2px solid rgb(68,68,68);
+}
