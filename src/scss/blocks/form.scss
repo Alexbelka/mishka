@@ -8,8 +8,8 @@
 .form__text{
   font-size:13px;
   line-height: 24px;
- margin-bottom: 30px;
 }
+
 
 .form-form__title{
   font-size: 17px;
@@ -63,14 +63,15 @@
 }
 
 .type{
-  min-height:100px;
+  min-height:80px;
+  width:300px;
 }
 
 .color{
   min-height: 350px;
 }
 
-.name{
+.data{
   min-height: 270px;
 }
 
@@ -99,4 +100,278 @@ input[type='text']{
   line-height: 17px;
   background:transparent;
   border:2px solid rgb(68,68,68);
+}
+
+
+
+.input__radio:checked + .check__radio{
+background-color: red;
+  border-radius: 50%;
+}
+
+.check__radio{
+  width:41px;
+  height: 41px;
+  position:absolute;
+  background:url('../../../build/svg/check-off.svg');
+  left:-63px;
+  top:-15px;
+  cursor:pointer;
+}
+
+
+.checkRadio{
+  margin-left:63px;
+  position:relative;
+}
+
+.checkBox{
+  position:relative;
+  margin-left: 63px;
+}
+
+.check__box{
+  width:40px;
+  height: 40px;
+  position:absolute;
+  background: url('../../../build/svg/box-off.svg');
+  left:-63px;
+  top:-15px;
+  cursor:pointer;
+}
+
+.check__input:checked + .check__box{
+  background: url('../../../build/svg/tick-mobile.svg') no-repeat center;
+}
+
+@media(min-width:768px){
+  .form{
+    width:768px;
+    padding:0 50px 0;
+  }
+
+  .form br{
+    display: none;
+  }
+
+  .form-form__type label{
+    font-size:19px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  .form__text{
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .form-form__title:after{
+    display: none;
+  }
+
+  .form-wrapper{
+    width:500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .form-container{
+    width:650px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-top: 30px;
+  }
+
+  .color{
+    width:450px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .grey{
+    padding-right: 50px;
+  }
+
+  .black{
+    padding-right: 40px;
+  }
+
+  .form-box{
+    width:668px;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-right: 65px;
+  }
+
+  .name{
+    width:501px;
+  }
+
+  .form-form__container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    border:none;
+  }
+
+  .form-form__title-data{
+    padding-top: 35px;
+  }
+
+  .form-form__container input{
+    border:none;
+    border-bottom:1px solid black;
+  }
+
+  .MiddleName,
+  .surname{
+    min-height:52px;
+    min-width:375px;
+  }
+
+  .name{
+    width:428px;
+    min-height: 52px;
+  }
+
+  .form-cage{
+    width: 668px;
+    margin-top: 30px;
+  }
+
+  .form-form__title{
+    margin:0;
+    padding:0;
+  }
+
+  .form-form__type-mail,
+  .form-form__type-phone{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone{
+   box-shadow:0 0 1px 1px black;
+    min-height: 52px;
+    width:501px;
+  }
+
+  .mail{
+    box-shadow: 0 0 1px 1px black;
+    min-height:52px;
+    width:501px;
+  }
+
+.form-form__type--wrapper{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-form__type-extra{
+  min-width:501px;
+}
+
+  .form-form__request{
+    width:668px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+.form__submit{
+  min-width:230px;
+  order:-1;
+}
+
+}
+
+@media(min-width:1250px){
+  .form{
+    width:1250px;
+    padding:0 50px 0;
+  }
+
+  .form__text{
+    width:700px;
+    margin:auto;
+  }
+
+  .form-form{
+    width:1150px;
+    padding-left:90px;
+  }
+
+  .form-wrapper{
+    padding-right:70px;
+  }
+
+  .form-container{
+    width:875px;
+    min-height: 130px;
+    padding-right: 65px;
+  }
+
+  .color{
+    width:500px;
+    min-height: 130px;
+    margin-right: 175px;
+  }
+
+  .grey,
+  .black{
+    padding: 0;
+  }
+
+  .form-box{
+    width:680px;
+  }
+
+
+.form-form__container{
+
+}
+
+  .form-form__title-data{
+    padding-top: 35px;
+  }
+
+  .form-cage{
+    width:825px;
+  }
+
+  .mail,
+  .phone{
+    width:680px;
+  }
+
+  .form-form__type--wrapper{
+    width:815px;
+  }
+
+  .form-form__type-extra{
+    min-width:680px;
+  }
+
+  .form-form__request{
+   margin-left:140px;
+  }
+
+  .page-footer__btn-none{
+    display: none;
+  }
 }
