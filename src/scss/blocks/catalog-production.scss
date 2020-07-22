@@ -43,16 +43,35 @@
   line-height: 17px;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
+
+.catalog-production__btn:hover{
+  background-color: rgb(68,68,68);
+  color:rgb(255,255,255);
+}
+
 
 @media(max-width:767px){
   .catalog-production__text-title{
-    position: absolute;
+    position: relative;
     top:-230px;
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
   }
+
+  .catalog-production__text-title:before{
+    content:"";
+    position:absolute;
+    width:32px;
+    height: 22px;
+    background: url('../../../build/svg/video.svg');
+    top:50%;
+    transform:translateY(-50%);
+    left:-43px;
+  }
+
 }
 
 @media(min-width:768px){
@@ -87,6 +106,8 @@
   .catalog-production__text-followers br{
     display: none;
   }
+
+
 }
 
 

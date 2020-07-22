@@ -24,6 +24,20 @@
   margin-left: 45px;
 }
 
+.address__item-Eaddress a{
+  color:rgb(0,0,0);
+  border-bottom: 1px solid rgb(98,209,186);
+}
+
+.address__item-Eaddress a:hover{
+  color:rgb(98,209,186);
+}
+
+.address__item-Eaddress a:active{
+  color:rgb(199,236,231);
+  border-bottom:none;
+}
+
 .address__item-city{
   margin-left:40px;
 }

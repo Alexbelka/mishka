@@ -73,6 +73,16 @@
   cursor:pointer;
 }
 
+.reviews__write:hover{
+  background-color:rgb(68,68,68);
+  color:rgb(255,255,255);
+}
+
+.reviews__write:active{
+  color:rgb(117,117,117);
+}
+
+
 @media(min-width:767px){
 .reviews{
   width:767px;
@@ -131,5 +141,8 @@
   }
   .reviews__text{
     padding-right: 90px;
+  }
+  .reviews__write{
+    margin-left: 220px;
   }
 }

@@ -19,6 +19,12 @@
   cursor:pointer;
 }
 
+.page-footer__btn:hover{
+  background-color: rgb(68,68,68);
+  color:rgb(255,255,2555);
+}
+
+
 .page-footer__logo{
   display: none;
 }
@@ -69,9 +75,10 @@
 @media(min-width:768px){
   .page-footer{
     width:768px;
-    min-height: 305px;
-    padding: 55px 60px 0;
+    min-height:  143px;
+    padding: 25px 60px 25px;
   }
+
   .page-footer__btn{
     width:230px;
     margin: 0 auto 70px;

@@ -44,10 +44,27 @@
   display: flex;
 }
 
+.cuties__assortment-item--interior:hover{
+  background-color:rgb(89,213,188);
+  cursor:pointer;
+}
+
+.cuties__assortment-item--interior a:active{
+  color:rgb(112,219,197);
+}
 
 .cuties__assortment-item--toys{
   background-color:rgb(86,195,178);
   display: flex;
+}
+
+.cuties__assortment-item--toys:hover{
+  background-color: rgb(70,193,174);
+  cursor:pointer;
+}
+
+.cuties__assortment-item--toys a:active{
+  color:rgb(126,212,198);
 }
 
 .cuties__assortment-item a{

@@ -10,9 +10,10 @@
 </head>
 <body>
 <header class="header">
-<nav class="navigation">
+<nav class="navigation navigation--opened">
 <ul class="navigation__menu">
-    <li class="navigation__menu-item navigation__menu-item--logo"><a href="#">
+    <li class="navigation__menu-item navigation__menu-item--logo navigation__menu-item--active">
+        <a href="#">
         <picture>
 <!--            <source media="(min-width:780px)" srcset="build/svg/mishka-logo-desktop.svg">-->
             <source media="(min-width:768px)" srcset="build/svg/mishka-logo-tablet.svg">
@@ -20,19 +21,28 @@
         </picture>
     </a>
     <button class="navigation__menu-btnClose"></button>
+        <button class="navigation__menu-btnOpen"></button>
     </li>
-    <li class="navigation__menu-item navigation__menu-item--catalog"><a href="#">
+    <li class="navigation__menu-item navigation__menu-item--catalog">
+        <a class="navigation__menu-item-ref" href="#">
         Каталог товаров
-    </a></li>
-    <li class="navigation__menu-item navigation__menu-item--knitting"><a href="#">
+        </a>
+    </li>
+    <li class="navigation__menu-item navigation__menu-item--knitting">
+        <a class="navigation__menu-item-ref" href="#">
         Вязание на заказ
-    </a></li>
-    <li class="navigation__menu-item navigation__menu-item--search"><a href="#">
+    </a>
+    </li>
+    <li class="navigation__menu-item navigation__menu-item--search">
+        <a class="navigation__menu-item-ref" href="#">
         Поиск по сайту
-    </a></li>
-    <li class="navigation__menu-item navigation__menu-item--basket"><a href="#">
+    </a>
+    </li>
+    <li class="navigation__menu-item navigation__menu-item--basket">
+        <a class="navigation__menu-item-ref" href="#">
         Корзина:пока пуста
-    </a></li>
+    </a>
+    </li>
 </ul>
 </nav>
     <section class="cuties">
@@ -42,7 +52,8 @@
     <h1 class="cuties__title">Милые штучки ручной<br> работы для дома</h1>
         <ul class="cuties__assortment">
             <li class="cuties__assortment-item cuties__assortment-item--interior"><a href="#">Предметы<br> интерьера</a>
-                <img src="build/svg/interior.svg" width="40" height="62" alt="" class="cuties__assortment-lamp"></li>
+                <img src="build/svg/interior.svg" width="40" height="62" alt="" class="cuties__assortment-lamp">
+            </li>
             <li class="cuties__assortment-item cuties__assortment-item--toys"><a href="#">Детские<br> игрушки</a>
                 <img src="build/svg/toy.svg" width="60" height="60" alt="" class="cuties__assortment-toy">
             </li>
@@ -66,20 +77,47 @@
     </ul>
     <div class="product__image"></div>
     <p class="product__price">Цена:990 руб.</p>
-    <button class="product__request">Заказать</button>
+    <button class="reviews__write">Заказать</button>
 </section>
     <section class="about">
     <h2 class="about__title">Коротко о нас:</h2>
         <div class="about__wrapper">
             <ul class="about__ecoMaterials">
-                <li class="about__ecoMaterials-item">Экологически<br> чистые материалы</li>
-                <li class="about__ecoMaterials-item">Скандинавский стиль по российской цене</li>
-                <li class="about__ecoMaterials-item">Увеличивает лайки на фотографиях</li>
+                <li class="about__ecoMaterials-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="37" viewBox="0 0 32 37">
+                        <image id="icon-1.svg" width="32" height="37" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAlCAYAAAAjt+tHAAACfUlEQVRYha1Y0W0bMQx9NTKAO0GvE9SdIM4EaSfoGRmg9gRuJ2g7gZ0J4v9+2Jkglwl8G+Q2SKHiMZB1pEQZfsABsY4in6jjE5V3d89/cQaWAL4DaDi1B/AHwO9aV1dnBP9FAjEajn8AsKpxNqkMPlOCx1jS5qIEmsjpF4e92Mw8ZHIEwmqOfJ4AvAC4dRC4pe0Tn2Mua9Y38APAOhmbOtOb2sj3MaXfE2gZaJTgl8A6qpo3aAQ8+3wuRr41AlOH81D3CwDv+Sw4VsLIt0ag5KgD8BnAFsDAZ8uxzkG8SGBHpxa+Gu8HvrMw0HeRwMCUaugKGeqNLIjPEXFLB3ZMq+aoBM1mp60+RyDUbauMj8rIadPSp4tAk1GuplCmbYbk8lI6sAEwV8bn1ipzvjUpLulAeL/nnj5z7JNTwEa+NQIeQQED1qrmRXTgXFTpwM2FSZg+reNY5Had9H1TR9olg/G8n9bWBgKv/PtAo0c66RVFXDoIPBrNqZC/Jrn/lRS64lfFGFTCexKLnRwzlRJW/jFJdQj0zRC2bEvWstw2UUBT05V3U87dW8EDQgb2hrCkzm+ig6bhvUDar473AtnnGQOXNOVwxcklAiI+K25Nn+n/26gHLKGbcJ89kJTmGtNZsmUl3E8cZ3wKK7WSJS96yQBYp16EQA+K7UPFyt9iCoGto5+LMU++m/R3CZ00PHEZWuVlIb471NwjTlq+mEBXebOdR/e/mtWv4mynZ4H0gRuns9rjeJH2mtphJAaeWr52Bh4iDTmBJcVbKt/BeC/wfHwH+tK67OxZEPYpTAxpq6mQeH6YG0v4CJ5/0QTm4Qkfmxyn1qrDauU4L5MG8A+ojJ5DEd2fawAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p>Экологически<br> чистые материалы</p>
+                </li>
+                <li class="about__ecoMaterials-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="34" viewBox="0 0 35 34">
+                        <image id="icon-2.svg" width="35" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAiCAYAAADVhWD8AAADTklEQVRYhZ1Y0bHaQAzceFKA04HTgakgdgfQAW/SAFTwoALoAFIB/s8HpAKcCuISKCFzzCqzVu4O+2nGw+OdrVvtSjqZT99//8QMqwAsAXwD0AAoI48OAHoAvwB0/D7JpoIJG7/zc64FQKspzxQTHQcG6g8ACQxt+Xf9ykcOzAbAHzoI0S0A3GYAOfKZgb7uvDZzwawBHJgjwcGOTlsA+xcgHpRlS0Yv9GVrj7lgzkIvmC9XOt8RVCwxe7LRkdE7E97WWvqu6ScLZkcHldDcc62hbEvKZZtqAF6WimsdgfRk/coAR4AUTM0bLKK1iwaOdpXjjZeXBVy3ajrxspYwksyX9o6ANNotH1o6Rz03MblqAjE2Bq73XDtJNVkgN/p7KDONywdDvCbdWlG9gPH3qSx275KyGJAA4Cs/Tfq1gjnxn43cbPlQSUkO3GRBWZR6L8uDcl2Ezb0Eu5OieDcwNTcsuRhu0nwwO0guGPVXi0qAHl0AJktL36UksK3tDUzPKI3ycFOsos7SY9aOei/LXdb6iCyNrP0rkIJIzy4ftEf0CVmU+pQsFoyXBdzTyj0weC2IdONoBh86SFJ6WZT6mCzahb0sbxKctYKmkE0touCgdU3My6IVEZNFu3BKFgvOOvSo6anTm+RRTBatiJgs2oVjsvhyf9pnpK3iRqlGdZGIjfqOayeJ+EG2z7LTjd9HJ7gyk6uIWKNS6lOH4+BkuTMIuH40AvORRoUJh6NWqLG8jHT1m4H5kmlUq0yjmno4GruLTFcPwa4KOQRTFZFrVDFZtAtfue5PebODMN0Vkqixisg1Kiv3lCy1rG0mzEllwU2HxLiYalS+3DXndolTPjcnPcdRm2caAeXnEju7YnOJziyl6x1b6eav5iSYTGA2xyoiJouWu0YeHP9w+XCZOCc9E9uPnb4icodjK63g6vLBpr9lZE6y153KBT4C03MTrYiph2MTOeV1btY5qZWK2utbRu711t6djI2bJGnjKlDtyE0eER86N1f+dSf13uSH71wX9raR3ErNSf8ByYHpJNtT42LOTN7YnLRP/TIx51eIlCyvrJNxpNSDcSozMTOq51oAYBWTBBIsN8+oheQNl/5YpO1eLWwY7p33YxGAv101hwvepKcsAAAAAElFTkSuQmCC"/>
+                    </svg>
+                    <p>Скандинавский стиль по российской цене</p></li>
+                <li class="about__ecoMaterials-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="27" viewBox="0 0 47 27">
+                        <image id="icon-3.svg" width="47" height="27" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAbCAYAAADszNYXAAABPElEQVRYhe2Y3W3CQBAGh+gKoAR3EHdAOkBUEFAaCBU4VBA6CKkg4TkPoQOgA0pwCWiltWRZwg7O5z/EvCD5Vrrh7ry759HL8QdgDiRARP85AUvgO7j4xwCkM2yBv4BF8BXPOABp53qXiXKnIwmFo2LbseuTbYG33GJHD73RqsGg5UPJWOQvc5dYZtnUlU9KxttgV1f+P6Q+8RF4BJ6AsXqSJuRXwLqQck38Vb2TavmlixdJPc3Z77tqMmW2OVwQz7P2OAlK+U9xXCXqlVfGtSr/145U1rkq5SfiuEqU8laN44qYWFm11b3Nb8kfiH1chjrPWzHae0nfel63Z9Mm+qSm2oN5G03dzbbE1liNWnS5mvtNqiuC31ayqvfsvXdfyRe4U/D+O/tu0/W17xpWdmwsJ898B4aAec6AzRl50jHqBVLP0wAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p>Увеличивает лайки на фотографиях</p></li>
             </ul>
             <ul class="about__handMade">
-                <li class="about__handMade-item">Связано вручную с любовью и умилением</li>
-                <li class="about__handMade-item">Поддержка отечественного производителя</li>
-                <li class="about__handMade-item">Поставляется в подарочной упаковке</li>
+                <li class="about__handMade-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="23" viewBox="0 0 55 23">
+                        <image id="icon-4.svg" width="55" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAXCAYAAACvd9dwAAABtElEQVRYhc2X7U3DMBCGX6IMYDZoN2gnACZomIBWLAATFCagGwATkP7mB2GChglaJiAjoJPO1cl1ZMdO47xSFKuq7Xt6n724//ncAZihu0oAKwBNwN5BlAG4AVAHXFYA2PN7tHBNBKAC8MGPOoN9Ucp4cwwghBevR8B0VC7WGvArMAcV733jteJzfDxa8/30/uV3HZvPVFDajAwB7FsachVybm75THuwDW4BYDlQjs0sqUJ3VwAOrs02ODBgZTl0DWASbmuQnsWmBwAvvCb73jkNrMo8bqMiQb3wNQFYKTyk+MeVdpFNfwCebLa54IrE+bc1bLGlgobemw5wwaUuKjKvrjy+v2RICl3lE5YpJeG6pATl5m7scBLIWR2FNgDmLrjQiaUvSbhvjzOpck4BPFLFd8FRtZpb2sJQWhi22CaWhtvFlJv90cM+YVlzU79NAFkI7zVGz6sY5pJbwUnYtjVxZamU+nAKj7sBe95ajF8bMWAETShjmy1NtU4kpky4PsD05RPxuHSWfwUSLhbswOGTqvicSBeUWLDUVdWqPBKsYW+VA9jaWeS5UDACot4ySjAA+AeK/GganQi39AAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p>Связано вручную с любовью и умилением</p>
+                </li>
+                <li class="about__handMade-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="27" viewBox="0 0 34 27">
+                        <image id="icon-5.svg" width="34" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAbCAYAAAAZMl2nAAABUklEQVRIic2XzXGDMBCFn5kU4BLsDpISUoHtDjLjBpIKgApwB4k7IOdcKEGuwKQDSsi8zC5hFBCSzd+7wHi1q8+7klasjpcvWNoAeAGwA/Bo2QyATwAnAJXtKFoDeO3x/wBQNg02CAPEEswlQqQCNIh/1DC+A8g8gkDGZOIziP+DPBMpR6jo8y0+9/gnLA3XxPWGIENqG0lN51ZMkP0CQPaR5+IaW+to3vn/tCiQ0mPc2KoIUiwAJCfIeQEgZ83InFn5nV8X69uMIGx+9a4xLZ10Cp20Gs3ty6yYCSFMsxL2OfLsuPAMqUrmqmWDVBPAtM7RdrKaEWEU4t8S6Drix4DphHCBKMxTl2OgjAuiDwTShxggvwOi6IPwAYGk9KAHT6BS3xKHXAMSKZVPt9ZMJr7BQ+8jum5c2aGNY4L61y0XI6aZ/3QrX2wqvvM32sJ2G4AfSOdRucKtPLMAAAAASUVORK5CYII="/>
+                    </svg>
+                    <p>Поддержка отечественного производителя</p>
+                </li>
+                <li class="about__handMade-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="32" viewBox="0 0 33 32">
+                        <image id="icon-6.svg" width="33" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAgCAYAAACcuBHKAAABfklEQVRYhe2WzXHCMBCFH4wLcAkugRKggpAKApMCGFfAUAGkgrgDfM8BpwJMBSEVRCVklNmX2Shag3EmJ70LRtq1Pu0fjB5PLzBUAFgDWKj9FsATgMpyEvsVgIlaqwGUAM4xBwvCv+AAIDcOagDcA3BqzdvuAUwNH287k4v80Nhw2CoAf+AGwE4dOg0gc/lOACf2G/GnzfraSPg0vCmAWbC3V6H2aVnK2lzWWomSDv1R+YzCA7MIWKGeX4O9s0Adxc7n/10BcN+hh2LpaNTzQ6QunNye0iFeRgCeVRTqGJpVEzv5ZGoWwX4T6ZAquADrhr5OOuSXrO5goek2c3KTk+Sd3UCxdu4kPUXgG+0MCIQ3nhvtuOpoU768Fdguu0pqJ+Zfe4iPCy/oErvn0DEfLsmNBwD8lXKrMP9VCYJKEFQW/ED1FUd0OaTLsmDU3qroJOwDQU3kf0QftRKFbTDir1FJeA2RD5h6kxt8v9OXuoNKEFSCoBIElSCoBPElAJ8AkFa/kdb0VAAAAABJRU5ErkJggg=="/>
+                    </svg>
+                    <p>Поставляется в подарочной упаковке</p></li>
             </ul>
         </div>
     </section>
@@ -110,7 +148,7 @@
             </svg>
         </li>
     </ul>
-    <button class="reviews__write">Написать</button>
+    <button class="reviews__write">Заказать</button>
     </div>
 </section>
     <section class="contacts">
@@ -120,7 +158,7 @@
         <ul class="address">
             <li class="address__item">
                 <p class="address__item-mail">e-mail:</p>
-                <p class="address__item-Eaddress">info@mimishkashop.ru</p>
+                <p class="address__item-Eaddress"><a href="#">info@mimishkashop.ru</a></p>
             </li>
             <li class="address__item">
                 <p class="address__item-address">адрес:</p>
@@ -159,5 +197,7 @@
     </div>
     </div>
 </footer>
+<script src="build/js/jquery.js"></script>
+<script src="build/js/index.js"></script>
 </body>
 </html>

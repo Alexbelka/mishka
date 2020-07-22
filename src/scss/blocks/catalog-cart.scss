@@ -65,6 +65,18 @@
   right:0;
 }
 
+.catalog-cart__list-term a{
+  color:rgb(0,0,0);
+}
+
+.catalog-cart__list-term a:hover{
+color:rgb(102,102,102);
+}
+
+.catalog-cart__list-term a:active{
+  color:rgb(178,178,178);
+}
+
 @media(min-width: 768px){
   .catalog-cart{
     width: 668px;
